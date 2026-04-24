@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  background: linear-gradient(#ffc0cb, #ff69b4);
+  font-family: "Comic Sans MS", cursive;
+  display: flex;
+  justify-content: center;
+}
+
+.livro {
+  background: #fff0f5;
+  width: 90%;
+  max-width: 420px;
+  padding: 20px;
+  border-radius: 25px;
+  margin-top: 30px;
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
+  text-align: center;
+  border: 4px solid pink;
+}
+
+.titulo {
+  font-size: 36px;
+  font-weight: bold;
+
+  background: linear-gradient(90deg, #ff69b4, #ff1493, #ffc0cb);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: brilho 3s infinite linear;
+}
+
+@keyframes brilho {
+  0% { background-position: 0%; }
+  100% { background-position: 100%; }
+}
+
+img {
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.texto-grande {
+  font-size: 24px;
+  line-height: 1.8;
+  margin-top: 15px;
+  color: #444;
+  background: #fff;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+button {
+  padding: 12px;
+  font-size: 18px;
+  margin: 10px;
+  border-radius: 12px;
+  border: none;
+  background: hotpink;
+  color: white;
+}
+
+#estrelas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
